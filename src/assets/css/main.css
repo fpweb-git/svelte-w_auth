@@ -1,0 +1,17 @@
+html {
+    min-height: 100vh;
+    background: rgb(35, 43, 59);
+    background: linear-gradient(148deg, rgba(35, 43, 59, 1) 0%, rgba(53, 53, 93, 1) 59%, rgb(64, 42, 105) 100%);
+}
+
+body {
+    position: relative;
+}
+
+
+:root {
+    --primary: #fdd835 !important;
+    --primary-hover: #fbc02d !important;
+    --primary-focus: rgba(253, 216, 53, 0.125) !important;
+    --primary-inverse: rgba(0, 0, 0, 0.75) !important;
+}

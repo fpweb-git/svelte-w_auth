@@ -1,5 +1,8 @@
 <script>
+    // TODO : redirect after login
     import { post, browserSet } from "$lib/req_utils";
+    import { goto } from "$app/navigation";
+
     let username;
     let password;
 
@@ -11,6 +14,8 @@
         console.log(json);
         if (json.jwt) {
             browserSet("jwt", json.jwt);
+            browserSet("user", json.user.username);
+            goto("/profile", { replaceState: true });
         }
     }
 </script>
